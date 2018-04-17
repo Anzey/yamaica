@@ -17,8 +17,12 @@ import org.eclipse.core.resources.IFolder;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.runtime.Assert;
 import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.ILog;
+import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Platform;
+import org.eclipse.core.runtime.Status;
 import org.eclipse.core.runtime.content.IContentType;
+import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.jface.viewers.DoubleClickEvent;
 import org.eclipse.jface.viewers.IDoubleClickListener;
 import org.eclipse.jface.viewers.ISelection;
@@ -248,7 +252,16 @@ public class OverviewPage extends FormPage implements Listener
     private Button createButton(Composite parent, String text, String pluginId, String iconPath)
     {
         Button button = toolkit.createButton(parent, text, SWT.PUSH); //$NON-NLS-1$
-        button.setImage(Activator.imageDescriptorFromPlugin(pluginId, iconPath).createImage());
+        ImageDescriptor imgDesc = Activator.imageDescriptorFromPlugin(pluginId, iconPath);
+        if (null != imgDesc)
+        {
+            button.setImage(imgDesc.createImage());
+        }
+        else
+        {
+            ILog log = Activator.getDefault().getLog();
+            log.log(new Status(IStatus.ERROR, pluginId, iconPath));
+        }
         button.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false));
         button.setEnabled(false);
         button.addListener(SWT.Selection, this);

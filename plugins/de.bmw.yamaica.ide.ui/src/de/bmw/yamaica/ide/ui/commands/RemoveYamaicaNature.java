@@ -11,6 +11,7 @@ import org.eclipse.core.commands.ExecutionEvent;
 import org.eclipse.core.commands.ExecutionException;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.runtime.NullProgressMonitor;
+import org.eclipse.jdt.core.IJavaProject;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.ui.IWorkbench;
@@ -32,6 +33,11 @@ public class RemoveYamaicaNature extends AbstractHandler
 
             for (Object selectedElement : structuredSelection.toList())
             {
+                if (selectedElement instanceof IJavaProject)
+                {
+                	selectedElement = ((IJavaProject)selectedElement).getProject();
+                }
+
                 if (selectedElement instanceof IProject)
                 {
                     ProjectWizard.removeYamaicaSpecificProjectSettings((IProject) selectedElement, new NullProgressMonitor());

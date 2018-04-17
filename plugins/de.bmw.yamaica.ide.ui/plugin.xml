@@ -173,7 +173,7 @@
          </command>
          <command
                commandId="org.eclipse.ui.window.preferences"
-               icon="platform:/plugin/org.eclipse.ui.ide/icons/full/elcl16/configs.gif"
+               icon="platform:/plugin/org.eclipse.ui.ide/icons/full/elcl16/configs.png"
                style="push">
             <visibleWhen
                   checkEnabled="false">
@@ -184,7 +184,7 @@
          </command>
          <command
                commandId="org.eclipse.ui.project.cleanAction"
-               icon="platform:/plugin/org.eclipse.debug.ui/icons/full/obj16/debugt_obj.gif"
+               icon="platform:/plugin/org.eclipse.debug.ui/icons/full/obj16/debugt_obj.png"
                style="push">
             <visibleWhen
                   checkEnabled="false">
@@ -242,7 +242,7 @@
          </command>
          <command
                commandId="org.eclipse.ui.help.aboutAction"
-               icon="platform:/plugin/org.eclipse.jface/icons/full/message_info.gif"
+               icon="platform:/plugin/org.eclipse.jface/icons/full/message_info.png"
                style="push">
             <visibleWhen
                   checkEnabled="false">
@@ -263,13 +263,23 @@
                   <iterate
                         ifEmpty="false"
                         operator="and">
+                     <and>
+                     <or>
+                     <instanceof
+                           value="org.eclipse.jdt.core.IJavaProject">
+                     </instanceof>
+                     <instanceof
+                           value="org.eclipse.core.resources.IProject">
+                     </instanceof>
+                     </or>
                      <adapt
-                           type="org.eclipse.core.resources.IProject">
+                           type="org.eclipse.core.resources.IResource">
+                        <test
+                              property="org.eclipse.core.resources.projectNature"
+                              value="de.bmw.yamaica.common.core.yamaicanature">
+                        </test>
                      </adapt>
-                     <test
-                        property="org.eclipse.core.resources.projectNature"
-                        value="de.bmw.yamaica.common.core.yamaicanature">
-                     </test>
+                     </and>
                   </iterate>
                </and>
             </visibleWhen>
@@ -282,21 +292,29 @@
                style="push">
             <visibleWhen
                   checkEnabled="false">
-               <and>
                   <iterate
                         ifEmpty="false"
                         operator="and">
-                     <adapt
-                           type="org.eclipse.core.resources.IProject">
-                     </adapt>
                      <not>
+                     <and>
+                     <or>
+                     <instanceof
+                           value="org.eclipse.jdt.core.IJavaProject">
+                     </instanceof>
+                     <instanceof
+                           value="org.eclipse.core.resources.IProject">
+                     </instanceof>
+                     </or>
+                     <adapt
+                           type="org.eclipse.core.resources.IResource">
                         <test
                               property="org.eclipse.core.resources.projectNature"
                               value="de.bmw.yamaica.common.core.yamaicanature">
                         </test>
+                     </adapt>
+                     </and>
                      </not>
                   </iterate>
-               </and>
             </visibleWhen>
          </command>
       </menuContribution>

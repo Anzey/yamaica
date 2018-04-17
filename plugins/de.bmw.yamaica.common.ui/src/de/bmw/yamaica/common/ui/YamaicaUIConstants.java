@@ -42,13 +42,13 @@ public interface YamaicaUIConstants extends YamaicaConstants
     String EXPORT_DIR_WIZARD_BANNER_PATH            = "icons/full/wizban/exportdir_wiz.png";
     String IMPORT_DIR_WIZARD_BANNER_PATH            = "icons/full/wizban/importdir_wiz.png";
     String NEW_FILE_WIZARD_BANNER_PATH              = "icons/full/wizban/newfile_wiz.png";
-    String NEW_FILE_ICON_PATH                       = "icons/full/etool16/newfile_wiz.gif";
-    String FILE_TYPE_ICON_PATH                      = "icons/full/obj16/fileType_filter.gif";
-    String FILTER_ICON_PATH                         = "icons/full/elcl16/filter_ps.gif";
-    String FILTER_DISABLED_ICON_PATH                = "icons/full/dlcl16/filter_ps.gif";
-    String FOLDER_ICON_PATH                         = "icons/full/obj16/folder.gif";
-    String EXPORT_ICON_PATH                         = "icons/full/etool16/export_wiz.gif";
-    String IMPORT_ICON_PATH                         = "icons/full/etool16/import_wiz.gif";
+    String NEW_FILE_ICON_PATH                       = "icons/full/etool16/newfile_wiz.png";
+    String FILE_TYPE_ICON_PATH                      = "icons/full/obj16/fileType_filter.png";
+    String FILTER_ICON_PATH                         = "icons/full/elcl16/filter_ps.png";
+    String FILTER_DISABLED_ICON_PATH                = "icons/full/dlcl16/filter_ps.png";
+    String FOLDER_ICON_PATH                         = "icons/full/obj16/folder.png";
+    String EXPORT_ICON_PATH                         = "icons/full/etool16/export_wiz.png";
+    String IMPORT_ICON_PATH                         = "icons/full/etool16/import_wiz.png";
 
     // resource paths for ECLIPSE_DEBUG_UI_PLUGIN_ID
     String RUN_WIZARD_BANNER_PATH                   = "icons/full/wizban/run_wiz.png";
@@ -62,17 +62,17 @@ public interface YamaicaUIConstants extends YamaicaConstants
     String REFRESH_DISABLED_ICON_PATH               = "icons/dlcl16/nav_refresh.gif";
 
     // resource paths for ECLIPSE_UI_PLUGIN_ID
-    String COPY_EDIT_ICON_PATH                      = "icons/full/etool16/copy_edit.gif";
-    String COPY_EDIT_DISABLED_ICON_PATH             = "icons/full/dtool16/copy_edit.gif";
-    String DELETE_EDIT_ICON_PATH                    = "icons/full/etool16/delete_edit.gif";
-    String DELETE_EDIT_DISABLED_ICON_PATH           = "icons/full/dtool16/delete_edit.gif";
+    String COPY_EDIT_ICON_PATH                      = "icons/full/etool16/copy_edit.png";
+    String COPY_EDIT_DISABLED_ICON_PATH             = "icons/full/dtool16/copy_edit.png";
+    String DELETE_EDIT_ICON_PATH                    = "icons/full/etool16/delete_edit.png";
+    String DELETE_EDIT_DISABLED_ICON_PATH           = "icons/full/dtool16/delete_edit.png";
     String EXPORT_WIZARD_BANNER_PATH                = "icons/full/wizban/export_wiz.png";
     String IMPORT_WIZARD_BANNER_PATH                = "icons/full/wizban/import_wiz.png";
     String NEW_WIZARD_BANNER_PATH                   = "icons/full/wizban/new_wiz.png";
 
     // resource paths for ECLIPSE_TEXTEDITOR_PLUGIN_ID
-    String EDIT_TEMPLATE_ICON_PATH                  = "icons/full/elcl16/edit_template.gif";
-    String EDIT_TEMPLATE_DISABLED_ICON_PATH         = "icons/full/dlcl16/edit_template.gif";
+    String EDIT_TEMPLATE_ICON_PATH                  = "icons/full/elcl16/edit_template.png";
+    String EDIT_TEMPLATE_DISABLED_ICON_PATH         = "icons/full/dlcl16/edit_template.png";
 
     // resource paths for ECLIPSE_JDT_UI_PLUGIN_ID
     String PACKAGE_ICON_PATH                        = "icons/full/obj16/package_obj.png";

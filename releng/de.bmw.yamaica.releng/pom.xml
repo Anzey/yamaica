@@ -26,7 +26,7 @@
                 <module>../de.bmw.yamaica.commonapi.releng</module>
                 <module>../de.bmw.yamaica.ide.releng</module>
                 <module>../de.bmw.yamaica.genivi.updatesite</module>
-                <module>../../../ascgit048.yamaica-ea/releng/de.bmw.yamaica.ea.releng</module>
+                <module>../../../yamaica-ea/releng/de.bmw.yamaica.ea.releng</module>
             </modules>
         </profile>
     </profiles>

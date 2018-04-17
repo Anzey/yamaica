@@ -10,7 +10,7 @@
       <wizard
             category="de.bmw.yamaica.franca.ui.exportCategory"
             class="de.bmw.yamaica.franca.ui.ExportWizard"
-            icon="platform:/plugin/org.eclipse.ui.ide/icons/full/obj16/fileType_filter.gif"
+            icon="platform:/plugin/org.eclipse.ui.ide/icons/full/obj16/fileType_filter.png"
             id="de.bmw.yamaica.franca.ui.exportWizard"
             name="Franca IDL files to file system">
          <description>
@@ -20,7 +20,7 @@
       <wizard
             category="de.bmw.yamaica.franca.ui.exportCategory"
             class="de.bmw.yamaica.franca.ui.HtmlExportWizard"
-            icon="platform:/plugin/org.eclipse.ui.ide/icons/full/obj16/fileType_filter.gif"
+            icon="platform:/plugin/org.eclipse.ui.ide/icons/full/obj16/fileType_filter.png"
             id="de.bmw.yamaica.franca.ui.htmlExportWizard"
             name="Franca IDL Documentation (HTML) to file system">
          <description>
@@ -37,7 +37,7 @@
       <wizard
             category="de.bmw.yamaica.franca.ui.importCategory"
             class="de.bmw.yamaica.franca.ui.ImportWizard"
-            icon="platform:/plugin/org.eclipse.ui.ide/icons/full/obj16/fileType_filter.gif"
+            icon="platform:/plugin/org.eclipse.ui.ide/icons/full/obj16/fileType_filter.png"
             id="de.bmw.yamaica.franca.ui.importWizard"
             name="Franca IDL files from file system">
          <description>
@@ -55,7 +55,7 @@
             canFinishEarly="false"
             category="de.bmw.yamaica.franca.ui.newCategory"
             class="de.bmw.yamaica.franca.ui.InterfaceDefinitionNewWizard"
-            icon="platform:/plugin/org.eclipse.ui.ide/icons/full/obj16/fileType_filter.gif"
+            icon="platform:/plugin/org.eclipse.ui.ide/icons/full/obj16/fileType_filter.png"
             id="de.bmw.yamaica.franca.ui.interfaceDefinitionNewWizard"
             name="Franca Interface Definition"
             project="false">
@@ -67,7 +67,7 @@
             canFinishEarly="false"
             category="de.bmw.yamaica.franca.ui.newCategory"
             class="de.bmw.yamaica.franca.ui.DeploymentSpecificationNewWizard"
-            icon="platform:/plugin/org.eclipse.ui.ide/icons/full/obj16/fileType_filter.gif"
+            icon="platform:/plugin/org.eclipse.ui.ide/icons/full/obj16/fileType_filter.png"
             id="de.bmw.yamaica.franca.ui.deploymentSpecificationNewWizard"
             name="Franca Deployment Specification"
             project="false">
@@ -79,7 +79,7 @@
             canFinishEarly="false"
             category="de.bmw.yamaica.franca.ui.newCategory"
             class="de.bmw.yamaica.franca.ui.DeploymentDefinitionNewWizard"
-            icon="platform:/plugin/org.eclipse.ui.ide/icons/full/obj16/fileType_filter.gif"
+            icon="platform:/plugin/org.eclipse.ui.ide/icons/full/obj16/fileType_filter.png"
             id="de.bmw.yamaica.franca.ui.deploymentDefinitionNewWizard"
             name="Franca Deployment Definition"
             project="false">
