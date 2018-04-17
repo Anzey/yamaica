@@ -1,5 +1,9 @@
 ### yamaica
 
+##### Mod info
+Changes to support Franca 0.12.0 and Eclipse Neon.3.
+Also "Yamaica nature" for Java projects was added.
+
 ##### Copyright
 Copyright (C) 2017 Bayerische Motoren Werke Aktiengesellschaft (BMW AG).
 
